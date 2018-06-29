@@ -19,7 +19,7 @@ ggplot2 绘图
 
 \*线图
 
-饼图
+\*饼图
 
 \*韦恩图
 
@@ -58,7 +58,7 @@ p+geom_histogram()
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](rmarkdown_绘图-ggplot2_files/figure-markdown_github/unnamed-chunk-2-1.png)
+![](/images/unnamed-chunk-2-1.png)
 
 ``` r
 p+geom_histogram()+ xlim(4,8)#限制x轴坐标范围
@@ -66,7 +66,7 @@ p+geom_histogram()+ xlim(4,8)#限制x轴坐标范围
 
     ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 
-![](rmarkdown_绘图-ggplot2_files/figure-markdown_github/unnamed-chunk-2-2.png)
+![](/images/unnamed-chunk-2-2.png)
 
 ### 散点图
 
@@ -75,7 +75,7 @@ p1<- ggplot(iris,aes(x=iris$Sepal.Length, y=iris$Sepal.Width, colour= iris$Speci
 p1 +geom_point()
 ```
 
-![](rmarkdown_绘图-ggplot2_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](/images/unnamed-chunk-3-1.png)
 
 ### 箱线图
 
@@ -83,4 +83,4 @@ p1 +geom_point()
 ggplot(iris,aes(iris$Species, y= iris$Sepal.Length,fill= iris$Species))+geom_boxplot()
 ```
 
-![](rmarkdown_绘图-ggplot2_files/figure-markdown_github/unnamed-chunk-4-1.png)
+![](/images/unnamed-chunk-4-1.png)
